@@ -47,9 +47,9 @@ button{cursor:pointer}
 .num{font-size:12.5px;font-weight:600;color:var(--g1)}
 
 /* ---------- barra superior ---------- */
-.aviso{background:var(--n);color:#fff;font-size:11px;padding:8px 20px;text-align:center;
- letter-spacing:.07em;text-transform:uppercase;font-weight:600;line-height:1.55}
-.aviso b{font-weight:800}
+.aviso{background:var(--n);color:#fff;font-size:13.5px;padding:10px 20px;text-align:center;line-height:1.5}
+.aviso b{font-weight:700;color:var(--sol)}
+.aviso a{color:#fff;text-decoration:underline;text-underline-offset:3px;margin-left:6px}
 
 /* ---------- nav ---------- */
 nav{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.97);
@@ -131,11 +131,7 @@ nav{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.97);
 .b-wa{background:var(--wa);color:#04210E}.b-wa:hover{filter:brightness(.93)}
 .btn svg{width:17px;height:17px;flex:0 0 17px}
 
-.ticker{background:var(--n);color:#fff;overflow:hidden;padding:11px 0;font-size:11px;
- font-weight:600;letter-spacing:.2em;text-transform:uppercase}
-.ticker-in{display:flex;gap:44px;width:max-content;animation:run 36s linear infinite}
-.ticker span{white-space:nowrap;opacity:.8}
-@keyframes run{to{transform:translateX(-50%)}}
+}
 
 /* ---------- secciones ---------- */
 section{padding:62px 0;border-top:1px solid var(--lin)}
@@ -299,7 +295,7 @@ footer a:hover{color:#fff}
 </head>
 <body>
 
-<div class="aviso"><b>Lun a sáb 10:30 a.m. – 8:30 p.m. · Dom 10:30 a.m. – 1:30 p.m.</b> &nbsp;·&nbsp; Av. Santa Victoria 452, Chiclayo &nbsp;·&nbsp; Escríbenos por WhatsApp a cualquier hora</div>
+<div class="aviso">Esta semana: <b>2 polos O’Neill por S/ 130</b> y <b>2 polos Oakley por S/ 150</b>. <a href="#/c/polos">Ver los polos</a></div>
 
 <nav>
   <div class="wrap nav-in">
@@ -473,9 +469,7 @@ function vHome(){
       </ul>
     </div></div>
   </header>
-  <div class="ticker"><div class="ticker-in">${
-    ['Envíos a todo el Perú','Marcas 100% originales','Boleta y factura','Av. Santa Victoria 452 — Chiclayo','Te atendemos por WhatsApp','Hasta 60% de descuento']
-    .map(t=>`<span>${t}</span>`).join('').repeat(2)}</div></div>
+  
 
   <section><div class="wrap">
     <div class="cab"><div><span class="num">Lo que más sale</span>
